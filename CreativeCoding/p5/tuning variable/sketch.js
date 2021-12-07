@@ -11,10 +11,10 @@ function setup() { //runs once
 }
 
 function draw() {
-
+background(255,255,255);
 translate (-100, -100);
 
-var num = 2; //variable for the number of squares in the grid
+var num = 3; //variable for the number of squares in the grid
 var sideLen = windowWidth/num; //variable for the side length of each square
 
   for (var y = 0; y < windowHeight + 100; y = y + sideLen) {//loop to create rows in the y direction
