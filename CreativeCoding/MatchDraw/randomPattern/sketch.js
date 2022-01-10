@@ -9,9 +9,9 @@ var pH = 8.5; // height of the paper in inches
 function setup() {
   createCanvas(pW * 72, pH * 72, SVG); // Create SVG Canvas
   strokeWeight(1); // do 0.1 for laser
-  stroke(255, 0, 0); // red is good for laser
+  stroke(230, 255, 0); // red is good for laser
   noFill(); // better not to have a fill for laser
-  
+
 }
 
 function draw() {
@@ -19,10 +19,11 @@ function draw() {
   for (var y=0; y<600; y=y+random(50,100)){
   for (var x = 0; x < 600; x=x+random(50,100)){
 
-  line (x,y,100 + x,100+y);
+  //line (x,y,100 + x,100+y);
+  triangle (x,100+y,100 + x,y,150+x,200+y);
 }
   }
-  save("mySVG.svg"); // give file name
-  print("saved svg");
+  // save("mySVG.svg"); // give file name
+  // print("saved svg");
   noLoop(); // we just want to export once
 }
