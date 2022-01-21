@@ -23,7 +23,7 @@ function draw() {
   triangle (x,100+y,100 + x,y,150+x,200+y);
 }
   }
-  // save("mySVG.svg"); // give file name
-  // print("saved svg");
+  save("mySVG.svg"); // give file name
+   print("saved svg");
   noLoop(); // we just want to export once
 }
